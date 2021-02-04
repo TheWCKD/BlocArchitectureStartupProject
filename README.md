@@ -1,16 +1,16 @@
-# bloc_architecture_app
+<b><h2> BLoC Architecture Startup Project </h2> </b>
 
-A new Flutter project.
+Hello everyone and welcome back! 
 
-## Getting Started
+This repo is going to serve as a starting project for every application I will build on my <b> BLoC - From Hero to Wizard </b> Tutorial Series on my <b> [Flutterly YouTube Channel](https://youtube.com/c/Flutterly)  </b>
 
-This project is a starting point for a Flutter application.
+<b><h2>  About the structure of the project </h2></b> 
 
-A few resources to get you started if this is your first Flutter project:
+This main startup project will contain everything you'll need in order to immediately start developing your bloc-driven application. 
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+<b> Here's some advantages: </b>
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- <b> 🔹 Pure Startup project </b>
+- <b> 🔹 Organised Folder Structure </b>
+- <b> 🔹 Required BLoC Dependencies </b>
+- <b> 🔹 Generated Routing </b>
