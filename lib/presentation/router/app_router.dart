@@ -2,17 +2,27 @@ import 'package:bloc_architecture_app/constants/strings.dart';
 import 'package:bloc_architecture_app/presentation/screens/home_screen/home_screen.dart';
 import 'package:flutter/material.dart';
 
+class RouteException implements Exception {
+  final String message;
+
+  const RouteException(this.message);
+}
+
 class AppRouter {
-  Route onGenerateRoute(RouteSettings settings) {
+  static const String home = '/';
+
+  const AppRouter._();
+
+  static Route<dynamic> onGenerateRoute(RouteSettings settings) {
     switch (settings.name) {
-      case '/':
+      case home:
         return MaterialPageRoute(
           builder: (_) => HomeScreen(
             title: Strings.homeScreenTitle,
           ),
         );
       default:
-        return null;
+        throw const RouteException('Route not found');
     }
   }
 }
