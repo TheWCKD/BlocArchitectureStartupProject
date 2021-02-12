@@ -1,1 +1,3 @@
-//dummy file
+// Dummy file
+
+class Model {}
