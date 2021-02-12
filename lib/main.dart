@@ -4,6 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'constants/strings.dart';
 import 'logic/debug/app_bloc_observer.dart';
 import 'presentation/router/app_router.dart';
+import 'themes/app_theme.dart';
 
 void main() {
   Bloc.observer = AppBlocObserver();
@@ -15,10 +16,8 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: Strings.appTitle,
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-      ),
+      theme: AppTheme.lightTheme,
+      darkTheme: AppTheme.darkTheme,
       debugShowCheckedModeBanner: false,
       initialRoute: AppRouter.home,
       onGenerateRoute: AppRouter.onGenerateRoute,
