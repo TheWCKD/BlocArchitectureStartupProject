@@ -1,7 +1,8 @@
-import 'package:bloc_architecture_app/constants/strings.dart';
-import 'package:bloc_architecture_app/exceptions/route_exception.dart';
-import 'package:bloc_architecture_app/presentation/screens/home_screen/home_screen.dart';
 import 'package:flutter/material.dart';
+
+import '../../constants/strings.dart';
+import '../../exceptions/route_exception.dart';
+import '../screens/home_screen/home_screen.dart';
 
 class AppRouter {
   static const String home = '/';
