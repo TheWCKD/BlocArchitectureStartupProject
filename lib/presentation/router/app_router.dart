@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../constants/strings.dart';
-import '../../exceptions/route_exception.dart';
+import '../../core/constants/strings.dart';
+import '../../core/exceptions/route_exception.dart';
 import '../screens/home_screen/home_screen.dart';
 
 class AppRouter {
@@ -18,7 +18,7 @@ class AppRouter {
           ),
         );
       default:
-        throw const RouteException('Route not found');
+        throw const RouteException('Route not found!');
     }
   }
 }
