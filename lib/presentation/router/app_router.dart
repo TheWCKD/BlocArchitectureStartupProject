@@ -1,12 +1,8 @@
-import 'package:bloc_architecture_app/constants/strings.dart';
-import 'package:bloc_architecture_app/presentation/screens/home_screen/home_screen.dart';
 import 'package:flutter/material.dart';
 
-class RouteException implements Exception {
-  final String message;
-
-  const RouteException(this.message);
-}
+import '../../core/constants/strings.dart';
+import '../../core/exceptions/route_exception.dart';
+import '../screens/home_screen/home_screen.dart';
 
 class AppRouter {
   static const String home = '/';
@@ -22,7 +18,7 @@ class AppRouter {
           ),
         );
       default:
-        throw const RouteException('Route not found');
+        throw const RouteException('Route not found!');
     }
   }
 }

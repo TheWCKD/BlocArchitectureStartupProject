@@ -9,7 +9,6 @@ class AppBlocObserver extends BlocObserver {
 
   @override
   void onClose(Cubit cubit) {
-    // TODO: implement onClose
     super.onClose(cubit);
   }
 
@@ -21,19 +20,16 @@ class AppBlocObserver extends BlocObserver {
 
   @override
   void onError(Cubit cubit, Object error, StackTrace stackTrace) {
-    // TODO: implement onError
     super.onError(cubit, error, stackTrace);
   }
 
   @override
   void onEvent(Bloc bloc, Object event) {
-    // TODO: implement onEvent
     super.onEvent(bloc, event);
   }
 
   @override
   void onTransition(Bloc bloc, Transition transition) {
-    // TODO: implement onTransition
     super.onTransition(bloc, transition);
   }
 }
