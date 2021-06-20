@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../../../core/constants/strings.dart';
 
 class HomeScreen extends StatelessWidget {
-  HomeScreen({Key key, this.title}) : super(key: key);
+  HomeScreen({Key? key, required this.title}) : super(key: key);
 
   final String title;
 
